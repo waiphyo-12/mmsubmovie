@@ -23,7 +23,7 @@
       color: white;
       border: none;
       padding: 12px 15px;
-      font-size: 18px;
+      font-size: 20px;
       border-radius: 6px;
       width: 20%;
     }
@@ -66,6 +66,9 @@
       font-size: 24px;
       border-radius: 8px;
       border: none;
+      align-content: center;
+      justify-content: center;
+      margin-left: 30%;
     }
 
     #movieList {
@@ -80,10 +83,10 @@
       background: #1e1e1e;
       padding: 2em;
       border-radius: 10px;
-      width: 180px;
+      width: 250px;
       font-size: 20px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      box-shadow: 0 0 2px rgba(255,255,255,0.1);
     }
 
     .movie-card img {
@@ -181,8 +184,10 @@
   
      <header>
       <h1>MMsub Movie</h1>
-    <input type="text" id="searchInput" placeholder="Search movies..." onkeyup="searchMovies()">
-  </header>
+    
+  </header> 
+   <input type="text" id="searchInput" placeholder="Search movies..." onkeyup="searchMovies()">
+
   <div class="menu-container">
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
     <div class="menu-items" id="menu">
@@ -191,6 +196,8 @@
       <a href="cartoon.html">🎬 Cartoon</a>
       <a href="ghost.html">🎬 Ghosts</a>
       <a href="comedy.html">🎬 Comedy</a>
+      <a href="myamya.pro">🎬 myamya</a>
+
     </div>
   </div>
 
