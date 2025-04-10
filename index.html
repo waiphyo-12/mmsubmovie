@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>OK.ru Movie App</title>
+  <title>MMsub Movie</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -43,6 +43,7 @@
       border-bottom: 1px solid #444;
       text-decoration: none;
       color: white;
+      font-size: 25px;
     }
 
     .menu-items a:last-child {
@@ -102,6 +103,7 @@
       padding: 20px 40px;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 20px;
     }
 
     #videoModal {
@@ -129,7 +131,6 @@
       color: white;
       border: none;
       border-radius: 6px;
-      font-size: 16px;
       cursor: pointer;
     }
 
@@ -173,12 +174,11 @@
       width: 100%;
       border-radius: 6px;
     }
-   
+  
   </style>
 </head>
 <body>
   
- 
      <header>
       <h1>MMsub Movie</h1>
     <input type="text" id="searchInput" placeholder="Search movies..." onkeyup="searchMovies()">
@@ -187,10 +187,10 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
     <div class="menu-items" id="menu">
       <a href="#home">🏠 Home</a>
-      <a href="#movies">🎬 Action </a>
-      <a href="#profile">🎬 Cartoon</a>
-      <a href="#settings">🎬 Ghosts</a>
-      <a href="#logout">🎬 Comedy</a>
+      <a href="Action.html">🎬 Action </a>
+      <a href="cartoon.html">🎬 Cartoon</a>
+      <a href="ghost.html">🎬 Ghosts</a>
+      <a href="comedy.html">🎬 Comedy</a>
     </div>
   </div>
 
@@ -200,16 +200,6 @@
       menu.classList.toggle("show");
     }
   </script>
- <script type="text/javascript">
-	atOptions = {
-		'key' : 'f2fdad763419cab999ef00ac05d6bdf2',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/f2fdad763419cab999ef00ac05d6bdf2/invoke.js"></script>
 
   <div id="movieList"></div>
 
@@ -225,27 +215,39 @@
     const movies = [
       {
         title: "Along with the Gods 2",
-        poster: "Along with the Gods 2.jpg",
+        poster: "/img/Along with the Gods 2.jpg",
         okruLink: "//ok.ru/videoembed/9567876549360?nochat=1"
       },
       {
         title: "The Boss Baby [2017]",
-        poster: "The Boss Baby [2017].jpg",
+        poster: "/img/The Boss baby [2017].jpg",
         okruLink: "//ok.ru/videoembed/9617878616816?nochat=1"
       },
       {
         title: "Kubo and Two Strings (2016)",
-        poster: "Kubo and Two Strings (2016).jpg",
+        poster: "/img/Kubo and Two Strings (2016).jpg",
         okruLink: "//ok.ru/videoembed/9618061331184?nochat=1"
       },
       {
         title: "Nadaaniyan",
-        poster: "Nadaaniyan.jpg",
+        poster: "/action/Nadaaniyan.jpg",
         okruLink: "//ok.ru/videoembed/9618713742064?nochat=1"
       },
+
+      {
+        title: "Jessabelle.2014",
+        poster: "/ghost/Jessabelle.2014.jpg",
+        okruLink: "//ok.ru/videoembed/9620205734640?nochat=1"
+      },
+      {
+        title: "The Village (2023)",
+        poster: "/action/The Village (2023).jpg",
+        okruLink: ""
+      },
+    
       {
         title: "Carl's Date (2023)",
-        poster: "Carl's Date (2023).jpg",
+        poster: "/img/Carl's Date (2023).jpg",
         okruLink: "https://ok.ru/videoembed/4291222381233"
       }
     ];
